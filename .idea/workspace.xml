@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dfb5ed0e-2528-4481-a5be-a0ef820855e0" name="Changes" comment="most of the code">
+    <list default="true" id="dfb5ed0e-2528-4481-a5be-a0ef820855e0" name="Changes" comment="Finals Changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/check_passwords.py" beforeDir="false" afterPath="$PROJECT_DIR$/check_passwords.py" afterDir="false" />
     </list>
@@ -78,6 +78,7 @@
       <updated>1753287857571</updated>
       <workItem from="1753287858634" duration="7750000" />
       <workItem from="1753628889271" duration="1056000" />
+      <workItem from="1753657119521" duration="670000" />
     </task>
     <task id="LOCAL‎-00001" summary="most of the code">
       <option name="closed" value="true" />
@@ -95,7 +96,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1753303155292</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL‎-00003" summary="Finals Changes">
+      <option name="closed" value="true" />
+      <created>1753657793518</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1753657793518</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,7 +123,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="most of the code" />
-    <option name="LAST_COMMIT_MESSAGE" value="most of the code" />
+    <MESSAGE value="Finals Changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finals Changes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Check_Password$check_passwords.coverage" NAME="check_passwords Coverage Results" MODIFIED="1753302428244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
