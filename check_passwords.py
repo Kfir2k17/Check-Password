@@ -15,17 +15,28 @@ COMMON_PASSWORDS = [
 
 
 def check_password(password): # Main Checking function
-    counter = 0
-    counter += check_length(len(password))
+    points = 0
+    points += check_length(len(password))
 
-    counter += 1 if password.islower() else 0 # Checks if contains lower case
-    counter += 1 if password.isupper() else 0 # Checks if contains upper case
-    counter += 1 if any(i.isdigit() for i in password) else 0 # Checks if contains numbers
-    counter += 1 if any(not c.isalnum() for c in password) else 0 # Checks if contains special characters
+    points += 1 if password.islower() else 0 # Checks if contains lower case
+    points += 1 if password.isupper() else 0 # Checks if contains upper case
+    points += 1 if any(i.isdigit() for i in password) else 0 # Checks if contains numbers
+    points += 1 if any(not c.isalnum() for c in password) else 0 # Checks if contains special characters
 
-    counter += check_common(password) # Checks if password is common
+    points += check_common(password) # Checks if password is common
 
-    return counter
+    security_level = measure_security(points)
+    return points, security_level
+
+def measure_security(points):
+    if points < 0:
+        return "Weak"
+
+    elif 1 < points < 3:
+        return "Medium"
+
+    return "Strong"
+
 
 def check_common(password): # Checks if password is common
     return -2 if password in COMMON_PASSWORDS else 0
@@ -41,4 +52,6 @@ def check_length(l): # Returns points on the basis of the Length of the password
 
 if __name__ == '__main__':
     pas = input('Enter password: ')
-    check_password(pas)
+    point, security = check_password(pas)
+
+    print(f"The password valued with {point} points, So your security level is {security}")
